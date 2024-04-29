@@ -1,6 +1,10 @@
 const findMinimum = arr => {
 
   // Your code here
+
+   //Time complexity: O(n)
+  //Space complexity: O(1) 
+
   if(arr.length === 0){
     return undefined; // return undefined for an empty array
   }
@@ -17,6 +21,10 @@ const findMinimum = arr => {
 const runningSum = arr => {
 
   // Your code here
+
+    //Time complexity: O(n)
+    //Space complexity: O(1) 
+
   if(arr.length === 0){
     return [];   // return an empty array if length is  = 0
   }
@@ -33,6 +41,10 @@ const runningSum = arr => {
 const evenNumOfChars = arr => {
 
   // Your code here
+
+    //Time complexity: O(n)
+    //Space complexity: O(1)  
+
  let count = 0;
 
   for(let i = 0; i < arr.length; i++){
@@ -47,6 +59,10 @@ const evenNumOfChars = arr => {
 const smallerThanCurr = arr => {
 
   // Your code here
+
+  //Time complexity: O(n^2)
+  //Space complexity: O(n)
+
   let array = [];
  
 
@@ -66,6 +82,9 @@ const smallerThanCurr = arr => {
 };
 
 const twoSum = (arr, target) => {
+
+  //Time complexity: O(n)
+  //Space complexity: O(n)  
   
   const seen = new Set();
 
@@ -89,6 +108,9 @@ const secondLargest = arr => {
   
   // const sorted = arr.toSorted();
   // return sorted[sorted.length - 2];
+
+  //Time complexity: O(n)
+  //Space complexity: O(1)
   
   let largest = -Infinity;
   let secondLargest = -Infinity;
@@ -108,6 +130,10 @@ const secondLargest = arr => {
 const shuffle = (arr) => {
 
   // Your code here
+
+  //time complexity = O(n)
+  //space complexity = O(n)
+
   const shuffledArray = [...arr]; // Create a copy of the original array
   for (let i = shuffledArray.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1)); // Generate a random index between 0 and i
